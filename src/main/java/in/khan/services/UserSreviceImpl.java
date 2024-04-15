@@ -56,7 +56,7 @@ public class UserSreviceImpl implements UserService {
 			body.append("<h1>Use below temporary pwd to unlock your a/c</h1>");
 			body.append("temporary pwd: "+tempPwd);
 			body.append("<br/>");
-			body.append("<a href=\"http://localhost:8080/unlock?email="+to+"\">click here to unlock</a>");
+			body.append("<a href=\"http://65.2.170.11:8080/unlock?email="+to+"\">click here to unlock</a>");
 			emailUtil.sendEmail(to, subject, body.toString());
 			return true;
 	}
